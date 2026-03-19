@@ -1,13 +1,17 @@
 {
   "name": "juggernaut-docs",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.38.1",
@@ -15,5 +19,9 @@
     "sharp": "^0.34.2",
     "starlight-cooler-credit": "^0.6.0",
     "starlight-links-validator": "^0.20.1"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0"
   }
 }
