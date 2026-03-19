@@ -5,7 +5,7 @@ description: All the type definitions for Juggernaut
 
 thank you to RealCheeseAcorn for kindly providing this
 
-```lua
+```luau
 export type CustomData = {[string]: any}
 
 export type UnlockTypes = "Points" | "Discovery" | "Code" | "Gamepass" | "UserId"
