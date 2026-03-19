@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import starlightLinksValidator from "starlight-links-validator";
+import starlightCoolerCredit from "starlight-cooler-credit";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +12,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Juggernaut Docs",
+      plugins: [starlightLinksValidator(), starlightCoolerCredit()],
       social: [
         {
           icon: "github",
@@ -21,7 +24,10 @@ export default defineConfig({
         {
           label: "Guides",
           items: [
-            { label: "Creating a Juggernaut", slug: "guides/creating-a-juggernaut" },
+            {
+              label: "Creating a Juggernaut",
+              slug: "guides/creating-a-juggernaut",
+            },
           ],
         },
         {

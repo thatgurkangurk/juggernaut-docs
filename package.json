@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/starlight": "^0.38.1",
     "astro": "^6.0.1",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "starlight-cooler-credit": "^0.6.0",
+    "starlight-links-validator": "^0.20.1"
   }
 }
